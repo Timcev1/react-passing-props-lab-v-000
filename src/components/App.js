@@ -31,15 +31,15 @@ class App extends React.Component {
     }
 
     render() {
-   return (
-     <FruitBasket
-       fruit={this.state.fruit}
-       filters={this.state.filters}
-       currentFilter={this.state.currentFilter}
-       onUpdateFilter={this.updateFilter}
-     />
-   );
- }
+      return (
+        <FruitBasket
+        fruit={this.state.fruit}
+        filters={this.state.filters}
+        currentFilter={this.state.currentFilter}
+        onUpdateFilter={this.updateFilter}
+       />
+     );
+   }
 }
 
 export default App;
