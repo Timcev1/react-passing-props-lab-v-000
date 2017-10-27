@@ -15,5 +15,4 @@ FilteredFruitList.defaultProps = {
   filter: null
 };
 
-
 export default FilteredFruitList;
