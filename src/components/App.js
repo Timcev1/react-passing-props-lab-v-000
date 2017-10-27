@@ -30,21 +30,16 @@ class App extends React.Component {
             .then(fruit => this.setState({ fruit }));
     }
 
-    handleFilterChange = event => {
-        console.log('new filter: ', event.target.value);
-        this.setState({ currentFilter: event.target.value });
-      }
-
-      render(){
-       return(
-         <FruitBasket
-           updateFilterCallback={this.handleFilterChange}
-           currentFilter={this.state.currentFilter}
-           filters={this.state.filters}
-           fruit={this.state.fruit}
-         />
-        )
-    }
+    render() {
+   return (
+     <FruitBasket
+       fruit={this.state.fruit}
+       filters={this.state.filters}
+       currentFilter={this.state.currentFilter}
+       onUpdateFilter={this.updateFilter}
+     />
+   );
+ }
 }
 
 export default App;
