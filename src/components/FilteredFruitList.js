@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {component} from 'react';
 
 const FilteredFruitList = ({ fruit, filter }) => {
   const fruitList = !filter ?  fruit : fruit.filter(item => item.fruit_type === filter);
